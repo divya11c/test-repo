@@ -127,6 +127,6 @@ async function loadPage() {
   loadDelayed();
 }
 
-const attrs = { 'async' : 'true' };
+const attrs = { async: 'true' };
 loadScript('https://assets.adobedtm.com/08c6c96e8270/299eb2b978d7/launch-cf8aa4216db8-development.min.js', attrs);
 loadPage();
