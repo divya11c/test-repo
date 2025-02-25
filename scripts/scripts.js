@@ -129,7 +129,7 @@ async function loadPage() {
   window.adobeDataLayer = window.adobeDataLayer || [];
   //push an event to datalayer
   window.adobeDataLayer.push({
-    "event": "page loaded"
+    event: 'page loaded',
   });
 }
 
