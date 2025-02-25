@@ -127,7 +127,7 @@ async function loadPage() {
   loadDelayed();
   // Initialize adobe dataLayer if it doesn't exist
   window.adobeDataLayer = window.adobeDataLayer || [];
-  //push an event to datalayer
+  // push an event to datalayer
   window.adobeDataLayer.push({
     event: 'page loaded',
   });
