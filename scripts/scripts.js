@@ -125,6 +125,12 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
+  // Initialize adobe dataLayer if it doesn't exist
+  window.adobeDataLayer = window.adobeDataLayer || [];
+  // push an event to datalayer
+  window.adobeDataLayer.push({
+    event: 'page loaded',
+  });
 }
 
 const attrs = { async: 'true', type: 'application/json' };
